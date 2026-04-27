@@ -5,7 +5,7 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "AWS Serverless Analytics Pipeline"
+title: "AWS "
 
 short_summary: >
   Built a scalable AWS serverless pipeline to ingest IoT sensor streams,
