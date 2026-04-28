@@ -8,39 +8,29 @@
 title: "AWS "
 
 short_summary: >
-  Built a scalable AWS serverless pipeline to ingest IoT sensor streams,
-  transform data on the fly, and deliver near-real-time alerts and
-  analytics dashboards for operations teams.
+  The goal of this project was to explore AWS by picking a stackholder question and then using different Aws services like Atena and S3 as well as 
+  sagemaker to answer the question. 
 
 tech_stack:
-  - AWS Lambda
-  - Amazon S3
-  - AWS Glue
-  - Amazon DynamoDB
-  - Amazon API Gateway
-  - Amazon CloudWatch
+  - sklearn
   - Python
-  - AWS CloudFormation
+  - AWS Sagemaker
+  - io
 
 problem_statement: >
-  The manufacturing operations team lacked a low-latency way to monitor
-  line sensor health and react to anomalies. Existing systems were
-  manual, fragmented, and unable to scale with increasing event volume.
+  Compare sagemaker to regular sklearn to figure out which machine learning model was more accurate in predicting how long it took
+  for the city departments to resolve complaints.
 
 approach: >
-  Designed an event-driven ingestion pipeline using API Gateway and
-  Lambda to capture streaming sensor data into S3. Added Lambda-based
-  ETL transforms to normalize records, store aggregate metrics in
-  DynamoDB, and emit CloudWatch custom metrics for monitoring. Used
-  CloudFormation to provision infrastructure and QuickSight-compatible
-  outputs for dashboards.
+  The approach was to first use Athena to create a binary classification of the data set in order to predict whether a complaint would be resolved in less than 3 days or not. 
+  Then I used sagemaker to train a machine learning model on the data set and then I used sklearn to train a machine learning model on the same data set. 
+  Finally I compared the results of the two models to see which one was more accurate.
 
 results_impact: >
-  The solution processed over 1.2 million sensor events per day with
-  end-to-end latency under 30 seconds. Automated alerts reduced
-  response time by 60%, and operations staff adopted the dashboard as
-  the primary tool for tracking line performance and incident trends.
+  The results showed that the sagemaker model was more accurate than the sklearn model in predicting how long it took for the city departments to resolve complaints.
+  This insight will help inform future machine learning projects and guide the selection of appropriate tools for different use cases.
 
-repo_url: "https://github.com/zeke-wonder-dog/aws-serverless-pipeline"
-notebook_url: "https://github.com/zeke-wonder-dog/aws-serverless-pipeline/blob/main/architecture_diagram.png"
-image_path: "img/placeholder_project_1.png"
+
+repo_url: "https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master"
+notebook_url: "https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master/aws-nyc311-yalleyek/notebooks"
+image_path: "img/project_3.png"

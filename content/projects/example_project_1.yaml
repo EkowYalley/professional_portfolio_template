@@ -5,7 +5,7 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "Project Numba"
+title: "Project Sql"
 
 short_summary: >
   Built a model to identify the best nap locations on MSU's campus based
@@ -15,33 +15,28 @@ short_summary: >
 
 tech_stack:
   - Python
-  - scikit-learn
-  - pandas
-  - matplotlib
+  - os
+  - SQL
+  - Pandas
+  - Matplotlib
+  - sqlalchemy
   - Jupyter Notebooks
 
 problem_statement: >
-  Finding a good nap spot is harder than it looks. Campus is large,
-  conditions change throughout the day, and the best patches of sun
-  move. A mascot operating on intuition alone wastes valuable resting
-  time — a problem that affects productivity, morale, and tail-wagging
-  rates across the entire campus community.
+  For this SQL project I had to work with the Actors database to figure out some insightson the data base.
+  I answered various questions about the data base and I had to use different SQL commands to get the answers, like which actor
+  generates the most revenue by agregating data bases.
 
 approach: >
-  Collected location data across 47 candidate nap sites over a full
-  academic semester. Features included average daily sunlight (hours),
-  grass softness score (1–10, assessed manually), nearby food-cart
-  proximity, and pedestrian traffic by hour. Trained a gradient boosting
-  classifier to predict a site's "nap quality" rating and used SHAP
-  values to explain which features mattered most.
+  My approach involved designing and implementing SQL queries to extract and analyze data from the Actors database.
+   I focused on understanding the relationships between different entities in the database and used aggregate functions to compute key metrics.
+
 
 results_impact: >
-  The model achieved 89% accuracy on held-out test sites. Sunlight
-  duration and grass softness were the top two predictive features,
-  while proximity to the student union food court provided a meaningful
-  but secondary boost. A ranked list of top-10 nap sites was distributed
-  to the campus dog community and has since been downloaded 847 times.
+  The results provided valuable insights into the performance of different actors and helped identify key revenue drivers.
+  The results also showed what drove sales at the store and what actors were the most popular. This information can be used to make
+   informed decisions about marketing strategies and inventory management, for the manager of of the video store.
 
-repo_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor"
-notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
+repo_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek.git"
+notebook_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek/blob/main/HW02-STUDENT.ipynb"
 image_path: "img/placeholder_project_1.png"

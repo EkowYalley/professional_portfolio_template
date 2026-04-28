@@ -8,44 +8,30 @@
 title: "Project Me vs You"
 
 short_summary: >
-  Analyzed audio and attendance data from Spartan Stadium to understand
-  what game events drive the loudest crowd reactions. Results were used
-  to help the athletics department optimize in-game entertainment and
-  — personally — to determine the exact moments when I should run onto
-  the field for maximum dramatic effect.
+  This is a project I made at a recent hackathon in the category of games. 
+  I used the turtle library to create a game inspired by snake but it was a two player game. 
+  The game was called me vs you and the goal was to eat the food and grow your snake while trying to avoid colliding with the other snake. 
+  The game was a lot of fun to make and play and I learned a lot about how to use the turtle library to create games.
 
 tech_stack:
   - Python
-  - pandas
-  - seaborn
-  - Plotly
-  - Jupyter Notebooks
+  - Turtle
+  - Time
+  - Random 
 
 problem_statement: >
-  Fan energy is contagious, but it is also unpredictable. The athletics
-  department wanted to know which in-game events (touchdowns, turnovers,
-  big defensive stops, walk-up music choices) produced the biggest crowd
-  reactions — and whether the pattern differed by opponent, weather, or
-  game time. As the mascot, I had strong professional interest in this
-  question.
+  The problem was to create an engaging two-player snake game using the turtle library in Python.
 
 approach: >
-  Combined play-by-play game data with decibel readings from stadium
-  microphones across three seasons (~36 home games). Engineered features
-  for score differential, down-and-distance, quarter, temperature, and
-  opponent rank. Produced interactive Plotly dashboards that let
-  non-technical staff filter by season and event type to explore crowd
-  response patterns on their own.
+  I built the game step by step, starting with simple snake movement and then adding a second player.
+  I kept the code organized by putting movement and reset behavior into separate functions like move_snake and reset_snake.
+  I also used Git to track changes and tested the game carefully to make sure collisions and boundaries work correctly.
 
 results_impact: >
-  Defensive turnovers produced the loudest average crowd response —
-  louder even than touchdowns — especially when MSU was trailing.
-  Walk-up music selections in the 3rd quarter showed a statistically
-  significant effect on cheer volume for games decided by fewer than
-  10 points. The athletics team used these findings to redesign the
-  third-quarter entertainment package for the following season. I was
-  given extra treats for my contributions.
+  The final result is a working two-player snake game made with Turtle.
+  I improved the game by replacing hardcoded settings with variables so it is easier to adjust difficulty.
+  The cleaner reset logic also fixed crashes when both snakes collided, making the game more stable and fun to play.
 
-repo_url: "https://github.com/zeke-wonder-dog/spartan-cheer-analysis"
-notebook_url: "https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb"
-image_path: "img/placeholder_project_2.png"
+repo_url: "https://github.com/EkowYalley/Me-vs-You/tree/main"
+notebook_url: "https://github.com/EkowYalley/Me-vs-You/blob/main/Hack.py"
+image_path: "img/Project_3.png"

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zeke the Wonder Dog | Data Science Portfolio</title>
+  <title>Ekow Yalley | Data Science Portfolio</title>
 
   <!-- Base styles always loaded -->
   <link rel="stylesheet" href="css/base.css" />
@@ -38,8 +38,8 @@
   <div class="about-text"><p>I am a data science student at Michigan State University, passionate about leveraging data to solve real-world problems.
  With a background in statistics and machine learning, I enjoy exploring data to uncover insights and drive informed decision-making. 
  I am eager to apply my skills in a collaborative environment and contribute to impactful projects.</p>
-<p><em>This example portfolio was inspired by Zeke IV, who passed in March of 2026.
-He played the role of Zeke the Wonder Dog for a decade.</em></p></div>
+<p><em>I would like this portfolio to showcase my work and skills, as a data science professional
+I picked the projects that best represent my abilities and interests, and showcase a diversity of skills.</em></p></div>
 </section>
 
 <!-- ===== Projects section ===== -->
@@ -186,6 +186,85 @@ He played the role of Zeke the Wonder Dog for a decade.</em></p></div>
           
           
           <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/placeholder_project_1.png"
+          alt="Thumbnail for AWS "
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">AWS </h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built a scalable AWS serverless pipeline to ingest IoT sensor streams, transform data on the fly, and deliver near-real-time alerts and analytics dashboards for operations teams.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">AWS Lambda</span>
+          
+          <span class="tech-badge">Amazon S3</span>
+          
+          <span class="tech-badge">AWS Glue</span>
+          
+          <span class="tech-badge">Amazon DynamoDB</span>
+          
+          <span class="tech-badge">Amazon API Gateway</span>
+          
+          <span class="tech-badge">Amazon CloudWatch</span>
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">AWS CloudFormation</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>The manufacturing operations team lacked a low-latency way to monitor line sensor health and react to anomalies. Existing systems were manual, fragmented, and unable to scale with increasing event volume.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Designed an event-driven ingestion pipeline using API Gateway and Lambda to capture streaming sensor data into S3. Added Lambda-based ETL transforms to normalize records, store aggregate metrics in DynamoDB, and emit CloudWatch custom metrics for monitoring. Used CloudFormation to provision infrastructure and QuickSight-compatible outputs for dashboards.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The solution processed over 1.2 million sensor events per day with end-to-end latency under 30 seconds. Automated alerts reduced response time by 60%, and operations staff adopted the dashboard as the primary tool for tracking line performance and incident trends.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/zeke-wonder-dog/aws-serverless-pipeline" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/zeke-wonder-dog/aws-serverless-pipeline/blob/main/architecture_diagram.png" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           
